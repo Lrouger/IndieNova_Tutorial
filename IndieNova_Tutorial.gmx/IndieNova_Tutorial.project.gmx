@@ -11,6 +11,12 @@
       <sprite>sprites\spr_ysera_walk_front</sprite>
       <sprite>sprites\spr_ysera_walk_back</sprite>
       <sprite>sprites\spr_ysera_walk_side</sprite>
+      <sprite>sprites\spr_ysera_attack_side</sprite>
+      <sprite>sprites\spr_ysera_attack_front</sprite>
+      <sprite>sprites\spr_ysera_attack_back</sprite>
+      <sprite>sprites\spr_ysera_skill</sprite>
+      <sprite>sprites\spr_ysera_magic_bullet</sprite>
+      <sprite>sprites\spr_ysera_skill_effect</sprite>
     </sprites>
     <sprites name="DynamicObject">
       <sprite>sprites\spr_pool</sprite>
@@ -30,10 +36,18 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\YseraStep.gml</script>
+    <script>scripts\YseraCreate.gml</script>
+    <script>scripts\YseraAnimationEnd.gml</script>
+    <script>scripts\MagicBulletCreate.gml</script>
+    <script>scripts\MagicBulletStep.gml</script>
+    <script>scripts\MagicBulletOutsideRoom.gml</script>
+    <script>scripts\SkillEffectAnimationEnd.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Charactor">
       <object>objects\obj_ysera</object>
+      <object>objects\obj_ysera_magic_bullet</object>
+      <object>objects\obj_ysera_skill_effect</object>
     </objects>
     <objects name="DynamicObject">
       <object>objects\obj_pool</object>
@@ -46,6 +60,9 @@
       <object>objects\obj_barrel</object>
       <object>objects\obj_blood_pool</object>
     </objects>
+    <object>objects\obj_scece_base</object>
+    <object>objects\obj_scene_static</object>
+    <object>objects\obj_scene_dynamic</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

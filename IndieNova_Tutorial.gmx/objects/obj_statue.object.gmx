@@ -20,9 +20,9 @@
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,138</point>
-    <point>232,138</point>
-    <point>232,320</point>
-    <point>0,320</point>
+    <point>0,128</point>
+    <point>232,128</point>
+    <point>232,312</point>
+    <point>0,312</point>
   </PhysicsShapePoints>
 </object>
